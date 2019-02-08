@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{49271157-5775-B470-E313-8618CE6EDE10}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/display_data.cs">
+    <Files>
+      <File FileName="Assets/button_hover.cs" Line="22" Column="37" />
+      <File FileName="Assets/resize_collider.cs" Line="27" Column="49" />
+      <File FileName="Assets/display_data.cs" Line="22" Column="95" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
