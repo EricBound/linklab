@@ -11,6 +11,7 @@ public class camera_movement : MonoBehaviour {
 
     // Update is called once per frame
     public float speed = 100000.0f;
+    public Transform target;
     void Update () {
         if (Input.GetKey(KeyCode.D))
         {
@@ -28,5 +29,9 @@ public class camera_movement : MonoBehaviour {
         {
             transform.Translate(new Vector3(0, speed * Time.deltaTime, 0));
         }
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        transform.LookAt(target);
+        transform.Translate(0, 0, scroll * speed);
+        //transform.Translate(0, 0, scroll * speed, Space.Self);
     }
 }

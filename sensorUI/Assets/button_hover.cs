@@ -5,11 +5,11 @@ using UnityEngine;
 public class button_hover : MonoBehaviour
 {
 
-    public GameObject info_toggle = null;
-    public GameObject info_panel = null;
+    public GameObject info_toggle;
+    public GameObject info_panel;
 
     // Use this for initialization
-    void Start() {
+    void Start() { 
         info_toggle.SetActive(false);
     }
 
@@ -20,6 +20,7 @@ public class button_hover : MonoBehaviour
     void OnMouseExit(){
         info_toggle.SetActive(false);
         info_panel.SetActive(false);
+        //if info_panel.isON;
     }
 
     // Update is called once per frame
