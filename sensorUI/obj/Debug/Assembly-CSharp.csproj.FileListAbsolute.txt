@@ -236,7 +236,6 @@
 /Users/ericduong/Documents/linklab/sensorUI/Temp/bin/Debug/UnityEngine.UI.xml
 /Users/ericduong/Documents/linklab/sensorUI/Temp/bin/Debug/UnityEngine.TestRunner.dll.mdb
 /Users/ericduong/Documents/linklab/sensorUI/Temp/bin/Debug/UnityEngine.TestRunner.xml
-/Users/ericduong/Documents/linklab/sensorUI/Temp/bin/Debug/nunit.framework.pdb
 /Users/ericduong/Documents/linklab/sensorUI/Temp/bin/Debug/nunit.framework.xml
 /Users/ericduong/Documents/linklab/sensorUI/Temp/bin/Debug/UnityEngine.Timeline.dll.mdb
 /Users/ericduong/Documents/linklab/sensorUI/Temp/bin/Debug/UnityEngine.Timeline.xml
@@ -256,3 +255,4 @@
 /Users/ericduong/Documents/linklab/sensorUI/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/ericduong/Documents/linklab/sensorUI/obj/Debug/Assembly-CSharp.dll
 /Users/ericduong/Documents/linklab/sensorUI/obj/Debug/Assembly-CSharp.pdb
+/Users/ericduong/Documents/linklab/sensorUI/Temp/bin/Debug/Assembly-CSharp-firstpass.pdb

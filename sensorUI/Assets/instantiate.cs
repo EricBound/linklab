@@ -45,9 +45,9 @@ public class instantiate : MonoBehaviour
         }
         for (int i = 0; i < coords.Length; i++)
         {
-            var newSensor = Instantiate(sensor, new Vector3(int.Parse(coords[i][0]), int.Parse(coords[i][1]), int.Parse(coords[i][2])), transform.localRotation);
+            var newSensor = Instantiate(sensor, new Vector3(float.Parse(coords[i][0]), float.Parse(coords[i][2]), float.Parse(coords[i][1])), transform.localRotation);
             var test = newSensor.GetComponent<assign_data>();
-            test.panel.text = "Temp: " + coords[i][3] + "\nHumidity: " + coords[i][4];
+            //test.panel.text = "Temp: " + coords[i][3] + "\nHumidity: " + coords[i][4];
             test.title.text = "Sensor " + (i + 1);
         }
 

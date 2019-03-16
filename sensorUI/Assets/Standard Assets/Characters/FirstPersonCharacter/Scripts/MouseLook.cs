@@ -14,13 +14,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public float MaximumX = 90F;
         public bool smooth;
         public float smoothTime = 5f;
-        public bool lockCursor = true;
+        //public bool lockCursor = true;
 
         public Texture2D cursorImage; // cursor
 
         private Quaternion m_CharacterTargetRot;
         private Quaternion m_CameraTargetRot;
-        private bool m_cursorIsLocked = true;
+        //private bool m_cursorIsLocked = true;
 
         public void Init(Transform character, Transform camera)
         {
@@ -53,9 +53,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 camera.localRotation = m_CameraTargetRot;
             }
 
-            UpdateCursorLock();
+            //UpdateCursorLock();
         }
-
+        /*
         public void SetCursorLock(bool value)
         {
             lockCursor = value;
@@ -95,7 +95,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Cursor.visible = true;
             }
         }
-
+        */
         Quaternion ClampRotationAroundXAxis(Quaternion q)
         {
             q.x /= q.w;

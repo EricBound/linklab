@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{49271157-5775-B470-E313-8618CE6EDE10}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/sensor_hover.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/coord2.txt">
     <Files>
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" Line="121" Column="80" />
-      <File FileName="Assets/cursor.cs" Line="8" Column="26" />
+      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" Line="98" Column="11" />
       <File FileName="Assets/button_hover.cs" Line="31" Column="1" />
-      <File FileName="Assets/instantiate.cs" Line="36" Column="8" />
-      <File FileName="Assets/display_data.cs" Line="33" Column="1" />
-      <File FileName="Assets/sensor_hover.cs" Line="39" Column="36" />
+      <File FileName="Assets/sensor_hover.cs" Line="91" Column="1" />
+      <File FileName="Assets/switch_cam.cs" Line="17" Column="32" />
+      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="31" Column="33" />
+      <File FileName="Assets/coord.txt" Line="1" Column="4" />
+      <File FileName="Assets/instantiate.cs" Line="37" Column="33" />
+      <File FileName="Assets/coord2.txt" Line="19" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +22,7 @@
                   </Node>
                 </Node>
               </Node>
-              <Node name="sensor_hover.cs" selected="True" />
+              <Node name="coord2.txt" selected="True" />
             </Node>
           </Node>
         </State>

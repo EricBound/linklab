@@ -1,3 +1,3 @@
-12,10,96,temp1,hum1
+-16,20,96,temp1,hum1
 38,14,75,temp2,hum2
 23,10,99,temp3,hum3
