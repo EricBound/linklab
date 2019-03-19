@@ -7,6 +7,8 @@ public class assign_data : MonoBehaviour
 {
     public Text panel;
     public Text title;
+    public Text value;
+    public GameObject canvas;
     // Start is called before the first frame update
     void Start()
     {

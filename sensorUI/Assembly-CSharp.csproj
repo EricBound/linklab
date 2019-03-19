@@ -79,6 +79,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\sensor_hover.cs" />
+    <Compile Include="Assets\sensor_value.cs" />
     <Compile Include="Assets\switch_cam.cs" />
     <Compile Include="Assets\toggle_cursor.cs" />
     <None Include="Assets\coord_id.txt" />
