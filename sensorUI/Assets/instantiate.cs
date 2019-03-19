@@ -9,10 +9,12 @@ public class instantiate : MonoBehaviour
 {
     public GameObject sensor;
     public TextAsset file;
+    public TextAsset data;
     //public string[][] coords;
     public static string[] coord_1d;
     public static int count = -1;
     public static string[][] coords;
+    public static string[][] data_array;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,18 +39,35 @@ public class instantiate : MonoBehaviour
         int rows = lines.Length;
         //string[][] coords = new string[lines.Length][];
         coords = new string[lines.Length][];
-        for (int i = 0; i < lines.Length; i++)
+        for (int i = 0; i < lines.Length; i++) // for each line
         {
         // Debug.Log(lines[i]);
-        string[] stringsLine = lines[i].Split(","[0]);    
-        coords[i] = stringsLine;
+            string[] stringsLine = lines[i].Split(","[0]);    
+            coords[i] = stringsLine;
         }
+
+        string[] data_lines = data.text.Split("\n"[0]);
+        data_array = new string[data_lines.Length][];
+        for (int i = 0; i < data_lines.Length; i++)
+        {
+            string[] data_string = data_lines[i].Split(","[0]);
+            data_array[i] = data_string;
+        }
+
         for (int i = 0; i < coords.Length; i++)
         {
-            var newSensor = Instantiate(sensor, new Vector3(float.Parse(coords[i][0]), float.Parse(coords[i][2]), float.Parse(coords[i][1])), transform.localRotation);
+            var newSensor = Instantiate(sensor, new Vector3(float.Parse(coords[i][1]), 0, float.Parse(coords[i][2])), transform.localRotation);
             var test = newSensor.GetComponent<assign_data>();
+            test.panel.text = "No data";
+            for(int j = 0; j < data_array.Length; j++)
+            {
+                if (data_array[j][0] == coords[i][0])
+                {
+                    test.panel.text = "Temp: " + data_array[j][2] + "°C\nHumidity: " + data_array[j][1] + "%";
+                }
+            }
             //test.panel.text = "Temp: " + coords[i][3] + "\nHumidity: " + coords[i][4];
-            test.title.text = "Sensor " + (i + 1);
+            test.title.text = "Sensor " + coords[i][0];
         }
 
         // below works

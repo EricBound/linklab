@@ -81,9 +81,11 @@
     <Compile Include="Assets\sensor_hover.cs" />
     <Compile Include="Assets\switch_cam.cs" />
     <Compile Include="Assets\toggle_cursor.cs" />
+    <None Include="Assets\coord_id.txt" />
     <None Include="Assets\coord.txt" />
     <None Include="Assets\coord2.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\hum_temp.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/ericduong/Documents/linklab/sensorUI/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

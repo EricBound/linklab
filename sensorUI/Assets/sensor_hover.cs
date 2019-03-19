@@ -39,7 +39,7 @@ public class sensor_hover : MonoBehaviour
         */
         info_title.SetActive(false);
     }
-
+    /*
     private void OnGUI()
     {
         Vector3 point = new Vector3();
@@ -60,7 +60,7 @@ public class sensor_hover : MonoBehaviour
         GUILayout.Label("World position: " + point.ToString("F3"));
         GUILayout.EndArea();
     }
-
+    */
     void OnMouseEnter()
     {
         info_title.SetActive(true);
