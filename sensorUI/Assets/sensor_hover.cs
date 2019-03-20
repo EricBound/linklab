@@ -64,12 +64,13 @@ public class sensor_hover : MonoBehaviour
     void OnMouseEnter()
     {
         info_title.SetActive(true);
+        info_panel.SetActive(true);
         //info_title.transform.position = cam.WorldToScreenPoint(sensor.transform.position);
         //lr.widthMultiplier = 1;
         //lr.SetPosition(1, cam.ScreenToWorldPoint(new Vector3(-300, 39, cam.nearClipPlane)));
         //lr.SetPosition(1, new Vector3(110, 90, 24));
     }
-
+    /*
     void OnMouseDown()
     {
         if (info_panel.activeSelf == false)
@@ -81,7 +82,7 @@ public class sensor_hover : MonoBehaviour
             info_panel.SetActive(false);
         }
     }
-
+    */
     void OnMouseExit()
     {
         info_title.SetActive(false);

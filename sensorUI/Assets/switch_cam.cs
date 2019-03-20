@@ -27,7 +27,7 @@ public class switch_cam : MonoBehaviour
         {
             if (cam1.gameObject.activeSelf == true) //transition to perspective view
             {
-                GameMaster.Instance.player.transform.position = new Vector3(Camera.main.transform.position.x, 0, Camera.main.transform.position.z);
+                GameMaster.Instance.player.transform.position = new Vector3(Camera.main.transform.position.x, -0, Camera.main.transform.position.z);
                 Vector3 travelVel = GameMaster.Instance.player.GetComponent<Rigidbody>().velocity;
                 //Limiting velocity to still seem cool but not fall off the map
                 GameMaster.Instance.player.GetComponent<Rigidbody>().velocity= new Vector3(Mathf.Clamp(travelVel.x,0,100), Mathf.Clamp(travelVel.y, 0, 100), Mathf.Clamp(travelVel.z, 0, 100));
@@ -43,6 +43,10 @@ public class switch_cam : MonoBehaviour
             }
             else if (cam2.gameObject.activeSelf == true)
             {
+                //Change the camera to be where the person was
+                Vector3 playerPos = GameMaster.Instance.player.transform.position;
+                cam1.gameObject.transform.position = new Vector3(playerPos.x, cam1.gameObject.transform.position.y, playerPos.z);
+
                 cam2.gameObject.SetActive(false);
                 cam1.gameObject.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
