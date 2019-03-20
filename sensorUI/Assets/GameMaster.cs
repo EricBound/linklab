@@ -37,6 +37,5 @@ public class GameMaster : MonoBehaviour
 
     private void Start()
     {
-
     }
 }
