@@ -17,12 +17,15 @@ public class DrawCircleInCamera : MonoBehaviour
         style.alignment = TextAnchor.MiddleCenter;
 
         // Position the Text below the Texture (rather than to the right of it)
-        style.imagePosition = ImagePosition.ImageAbove;
+        style.imagePosition = ImagePosition.ImageAbove;        
     }
 
     void OnGUI()
     {
-        if (gameObject.GetComponent<Camera>() == Camera.main) 
+        if (gameObject.GetComponent<Camera>() == Camera.main)
+        {
+            GUI.color = Color.red;
             GUI.Box(new Rect(0, 0, Screen.width, Screen.height), content, style);
+        }
     }
 }
