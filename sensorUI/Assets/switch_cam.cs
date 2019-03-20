@@ -10,6 +10,7 @@ public class switch_cam : MonoBehaviour
     public GameObject eye;
     public GameObject top;
     public GameObject vis_prompt;
+    public GameObject ceiling;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,7 @@ public class switch_cam : MonoBehaviour
                 img.SetActive(true);
                 eye.SetActive(true);
                 top.SetActive(false);
+                ceiling.SetActive(true);
                 vis_prompt.SetActive(true);
             }
             else if (cam2.gameObject.activeSelf == true)
@@ -42,6 +44,7 @@ public class switch_cam : MonoBehaviour
                 img.SetActive(false);
                 eye.SetActive(false);
                 top.SetActive(true);
+                ceiling.SetActive(false);
                 vis_prompt.SetActive(false);
             }
         }

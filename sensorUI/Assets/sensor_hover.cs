@@ -7,13 +7,13 @@ public class sensor_hover : MonoBehaviour
     public GameObject info_title;
     public GameObject info_panel;
     public GameObject sensor;
-    LineRenderer lr;
+    //LineRenderer lr;
     private Camera cam;
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
-
+        /*
         lr = GetComponent<LineRenderer>();
         lr.material = new Material(Shader.Find("Sprites/Default"));
         lr.startColor = Color.gray;
@@ -22,7 +22,7 @@ public class sensor_hover : MonoBehaviour
         lr.SetPosition(1, new Vector3(-39, 50, 50));
         //lr.SetPosition(1, cam.ScreenToWorldPoint(new Vector3(-399, 50, cam.nearClipPlane)));
         lr.widthMultiplier = 0;
-
+        */
         /*
         lr.material = new Material(Shader.Find("Sprites/Default"));
 
@@ -65,7 +65,7 @@ public class sensor_hover : MonoBehaviour
     {
         info_title.SetActive(true);
         //info_title.transform.position = cam.WorldToScreenPoint(sensor.transform.position);
-        lr.widthMultiplier = 1;
+        //lr.widthMultiplier = 1;
         //lr.SetPosition(1, cam.ScreenToWorldPoint(new Vector3(-300, 39, cam.nearClipPlane)));
         //lr.SetPosition(1, new Vector3(110, 90, 24));
     }
@@ -86,7 +86,7 @@ public class sensor_hover : MonoBehaviour
     {
         info_title.SetActive(false);
         info_panel.SetActive(false);
-        lr.widthMultiplier = 0;
+        //lr.widthMultiplier = 0;
     }
 
     // Update is called once per frame

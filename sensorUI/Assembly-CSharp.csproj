@@ -67,6 +67,7 @@
     <Compile Include="Assets\camMouse.cs" />
     <Compile Include="Assets\characterController.cs" />
     <Compile Include="Assets\display_data.cs" />
+    <Compile Include="Assets\door.cs" />
     <Compile Include="Assets\getCount.cs" />
     <Compile Include="Assets\instantiate.cs" />
     <Compile Include="Assets\resize_collider.cs" />
