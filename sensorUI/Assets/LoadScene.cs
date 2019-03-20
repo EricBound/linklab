@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
@@ -20,6 +20,6 @@ public class LoadScene : MonoBehaviour
 
     public void MoveToScene(int index)
     {
-        EditorSceneManager.LoadScene(index);
+        SceneManager.LoadScene(index);
     }
 }
