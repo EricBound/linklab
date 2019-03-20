@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.FirstPerson
@@ -184,6 +185,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
             }
             m_Jump = false;
+
+            //if (Input.GetKey(KeyCode.Escape))
+            //{
+            //    SceneManager.LoadScene(0);                
+            //}
         }
 
 
